@@ -34,7 +34,7 @@ function Page1() {
                 </div>
                 <div className={`text1 ${isVisible ? 'fade-in' : 'fade-out'}`}>
                     <p>
-                        Үйлөнүү тоюбузга – <br />
+                        Жентек тоюбузга – <br />
                         <span>чакырабыз</span>
                     </p>
                 </div>
