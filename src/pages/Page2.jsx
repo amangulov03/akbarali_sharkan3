@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion"; // Импорт для анимаций
 import "./page2.css";
 import { IoIosHeart } from "react-icons/io";
-import music from "../songs/Jax (02.14) - Озгочо кун.mp3";
+import music from "../songs/Мирбек Атабеков - Балама.mp3";
 import Map2GIS from "../components/Map2GIS.jsx";
 
 function Page2() {
@@ -117,15 +117,7 @@ function Page2() {
                 >
                 </motion.div>
                 <div className="background"></div>
-                <img
-                    src="/img/3.jpeg"
-                    loading="lazy"
-                    alt="Wedding Hands"
-                    className={`wedding-image ${isVisible ? "fade-in" : ""}`}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1, delay: 0.2 }}
-                />
+                
                 <motion.div
                     className="text_i_and_j"
                     initial="hidden"
@@ -133,7 +125,7 @@ function Page2() {
                     viewport={{ once: true, amount: 0.3 }}
                     variants={variants}
                 >
-                    <h1>Урматту алтындай болгон болошторум сиздердерди балдарыбыз Мурза менен Айгулдун уйлонуу улпот тоюна чакырабыз</h1>
+                    <h1>Урматту менин алтындай болгон бололорум  сиздерди уулум Эламандын жентек тоюна чакырам</h1>
                     <p>
                         Келип кадырлуу коногубуз болуп кетиниздер
                     </p>
@@ -200,29 +192,7 @@ function Page2() {
                     Той ээлери: <b>Акбарали </b>жана <b>Шаркан</b>
                 </h4>
             </motion.div>
-            <motion.div
-                className="wedding-gallery"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={{
-                    ...variants,
-                    visible: {
-                        ...variants.visible,
-                        transition: { staggerChildren: 0.2 },
-                    },
-                }}
-            >
-                <motion.div className="photo-frame" variants={variants}>
-                    <img src="/img/1.jpeg" alt="Couple holding hands" loading="lazy"/>
-                </motion.div>
-                <motion.div className="photo-frame" variants={variants}>
-                    <img src="/img/4.jpeg" alt="Bride with bouquet" loading="lazy"/>
-                </motion.div>
-                <motion.div className="photo-frame" variants={variants}>
-                    <img src="/img/3.jpeg" alt="Wedding rings" loading="lazy"/>
-                </motion.div>
-            </motion.div>
+            
             
             <motion.div
                 className="venue-section"
@@ -266,15 +236,7 @@ function Page2() {
                 variants={variants}
             >
             </motion.div>
-            <motion.div
-                className="sections"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={variants}
-            >
-                <img src="/img/2.jpeg" alt="" loading="lazy"/>
-            </motion.div>
+            
             <motion.div
                 className="countdown-container"
                 initial="hidden"

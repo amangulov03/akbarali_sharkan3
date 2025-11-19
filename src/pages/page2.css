@@ -26,9 +26,13 @@ p {
     height: 380px;
 }
 
+.background {
+    z-index: -1;
+}
+
 .weding_day {
     position: relative;
-    top: 100px;
+    top: 500px;
     z-index: 99;
     line-height: 65px;
 }
@@ -69,7 +73,7 @@ p {
     width: 35px;
     height: 35px;
     color: #97966c;
-    margin: 70px 0;
+    margin: 100px 0;
     animation: pulse 1.5s infinite;
 }
 
@@ -88,7 +92,7 @@ p {
 
 .songs {
     position: relative;
-    top: 800px;
+    top: 100px;
     cursor: pointer;
 }
 
@@ -111,7 +115,7 @@ p {
     color: #666;
     padding: 20px;
     position: relative;
-    top: 850px;
+    top: 100px;
 }
 
 .calendar h2 {
@@ -191,7 +195,7 @@ p {
     padding: 20px;
     gap: 30px;
     position: relative;
-    top: 850px;
+
 }
 
 .wedding-gallery img[alt="Bride with bouquet"] {
@@ -210,7 +214,7 @@ p {
 
 .schedule {
     position: relative;
-    top: 1000px;
+
     color: #666;
     font-family: "MyFont3", sans-serif;
 }
@@ -251,7 +255,7 @@ p {
 
 .third {
     position: absolute;
-    top: 575px;
+    
     left: 1000px;
     color: #000;
     font-size: 28px;
@@ -264,9 +268,9 @@ p {
 
 .venue-section {
     position: relative;
-    top: 900px;
     background-color: #97966c;
     padding: 50px 0;
+    top: 100px;
 }
 
 .venue-section h2 {
@@ -302,7 +306,6 @@ p {
 
 .map {
     position: relative;
-    top: 900px;
     filter: grayscale(100%);
 }
 
@@ -327,12 +330,7 @@ p {
     margin: 0 auto;
 }
 
-.forms {
-    position: relative;
-    top: 1000px;
-    padding: 100px 0;
-    background-color: #97966c;
-}
+
 
 .forms h1 {
     font-family: "MyFont", sans-serif;
@@ -349,11 +347,7 @@ p {
     padding: 30px 0;
 }
 
-form {
-    display: grid;
-    width: 450px;
-    margin: 0 auto;
-}
+
 
 .form-group {
     display: flex;
@@ -399,9 +393,8 @@ form button {
 }
 
 .sections {
-    height: 200px;
+    height: 2px;
     position: relative;
-    top: 1000px;
 }
 
 .sections img {
@@ -419,9 +412,8 @@ form button {
 /* Countdown.css */
 .countdown-container {
     position: relative;
-    top: 1000px;
     background-color: #97966c;
-    padding: 100px;
+    padding: 100px 0;
     text-align: center;
     color: white;
     font-size: 24px;
@@ -536,11 +528,11 @@ form button {
         padding-bottom: 100px;
     }
     .songs {
-        top: 630px;
+        top: 120px;
     }
 
     .calendar {
-        top: 700px;
+        top: 120px;
     }
 
     .calendar h2 {
@@ -555,8 +547,7 @@ form button {
 
     .wedding-gallery {
         /* flex-direction: column; */
-        top: 800px;
-        margin-bottom: 100px;
+        
     }
 
 
@@ -566,7 +557,7 @@ form button {
     }
 
     .schedule {
-        top: 900px;
+        top: 0px;
     }
 
     .schedule svg {
@@ -580,6 +571,11 @@ form button {
         position: absolute;
         left: 200px;
         font-size: 24px;
+    }
+
+    .venue-section {
+        position: relative;
+        top: 250px;
     }
 
     .second {
@@ -602,35 +598,24 @@ form button {
     }
 
     .venue-section {
-        top: 800px;
+        top: 200px;
     }
 
     .venue-image img {
         max-width: 80%;
     }
 
-    .map {
-        top: 800px;
-    }
-
-    .forms {
-        top: 800px;
-    }
-
-    .sections {
-        top: 900px;
-    }
-
+  
     .sections img {
         position: relative;
         left: 0;
         top: -190px;
     }
 
-    .countdown-container {
-        top: 750px;
-        padding: 100px;
+    .map {
+        top: 150px;
     }
+   
 
     .text {
         font-size: 2em;
@@ -640,12 +625,21 @@ form button {
     .time-box {
         margin: 5px 0;
     }
+
+    .countdown-container {
+        top: 120px;
+    }
 }
 
 @media (max-width: 480px) {
     .weding_day h1 {
         font-size: 36px;
     }
+
+      .text_i_and_j .heart {
+         margin: 100px 0;
+    }
+
 
     .weding_day p {
         font-size: 18px;
@@ -661,11 +655,12 @@ form button {
     }
 
     .songs {
+        top: 130px;
         bottom: 100px;
     }
 
     .calendar {
-        top: 700px;
+        top: 150px;
     }
 
     .months {
@@ -688,9 +683,7 @@ form button {
         height: auto;
     }
 
-    .schedule {
-        top: 850px;
-    }
+  
 
     .schedule svg {
         position: relative;
@@ -716,39 +709,30 @@ form button {
         left: 90px;
     }
 
+    .map {
+        top: 150px;
+    }
+
     .third {
         left: 200px;
     }
 
     .venue-section {
-        top: 700px;
+        position: relative;
+        top: 200px;
     }
 
-    .map {
-        top: 700px;
-    }
 
-    .forms {
-        top: 800px;
-    }
 
     .forms p {
         width: 350px;
     }
 
     form {
-        width: 80%;
+        width: 85%;
     }
 
-    .sections {
-        height: 200px;
-        top: 960px;
-    }
 
-    .countdown-container {
-        top: 840px;
-        padding: 80px;
-    }
 
     .text {
         font-size: 1.5em;
@@ -757,5 +741,9 @@ form button {
 
     .time-box {
         padding: 9px 18px;
+    }
+
+    .countdown-container {
+        top: 100px;
     }
 }
